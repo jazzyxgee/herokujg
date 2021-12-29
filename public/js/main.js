@@ -1,9 +1,18 @@
+/**cursor */
+var cursor = document.getElementById("cursor");
+document.body.addEventListener("mousemove", function(e) {
+    cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+});
+
 /* navigation menu overlay */
 function openNav() {
     document.getElementById("overlay-menu").style.width = "100%";
+    document.getElementById("cursor").style.display = "block";
 }
 function closeNav() {
     document.getElementById("overlay-menu").style.width = "0%";
+    document.getElementById("cursor").style.display = "none";
 }
 
 /* ScrollReveal for smooth transitions */

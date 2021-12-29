@@ -13,7 +13,25 @@ body{
     /*overflow: auto;*/
     height: 100%;
 }
+.cursor {
+    display: none;
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: white;
+    z-index: 10000;
+    border: 2px solid white;
+    height: 80px;
+    width: 80px;
+    transition: all 300ms ease-out;
+}
 
+
+/*navigation bar */
 .button_container {
     font-size: 35px;
     display: flex;
@@ -21,7 +39,7 @@ body{
     justify-content: right;
 }
 .openbtn{
-    color:#fff;
+    color:#000;
     text-decoration: none;
 }
 .openbtn:hover{
@@ -33,23 +51,9 @@ body{
     text-decoration: none;
 }
 .closebtn:hover {
-    color:#fff;
     cursor: pointer;
     opacity: .6;
 }
-/*navigation bar 
-nav{
-    display:grid;
-    grid-template-columns: 1fr .7fr;
-    grid-template-areas:
-    "button links"
-}
-.links{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none;
-    grid-area: links;
-}*/
 .overlay {
     height: 100vh;
     width: 0;
@@ -79,11 +83,30 @@ nav{
     text-decoration: none;
 }
 .links a:hover{
-    color: #fff;
+    color:#aaa82e;
     transition: .9s;
     font-size:2em;
 }
-/*top hero home page section*/
+.active {
+    text-decoration: underline 4px;
+    color:#6b6a1e;
+}
+/*navigation bar 
+nav{
+    display:grid;
+    grid-template-columns: 1fr .7fr;
+    grid-template-areas:
+    "button links"
+}
+.links{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    grid-area: links;
+}*/
+
+
+/*top home page section*/
 main {
     background-color: #e0c8c6;
     color:#fff;
