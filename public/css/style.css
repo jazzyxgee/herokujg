@@ -30,10 +30,9 @@ body{
     transition: all 300ms ease-out;
 }
 
-
 /*navigation bar */
 .button_container {
-    font-size: 35px;
+    font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -91,20 +90,6 @@ nav{
     text-decoration: underline 4px;
     color:#6b6a1e;
 }
-/*navigation bar 
-nav{
-    display:grid;
-    grid-template-columns: 1fr .7fr;
-    grid-template-areas:
-    "button links"
-}
-.links{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none;
-    grid-area: links;
-}*/
-
 
 /*top home page section*/
 main {
@@ -132,4 +117,81 @@ h1{
 .main-photo img{
     width: 100%;
 }
-
+.featured {
+    background-color: #e0c8c6;
+    padding-top: 200px;
+    color:#fff;
+}
+h3{
+    color:#000;
+    padding-top: 10px;
+}
+.feat-grid{
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, .1fr);
+    gap: 50px;
+    
+    grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right"
+}
+.feat-grid img{
+    width: 100%;
+}
+.top-left{  
+    grid-area: top-left;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.top-right{
+    grid-area: top-right;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.bottom-left{
+    grid-area: bottom-left;
+}
+.bottom-right{
+    grid-area: bottom-right;
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+#plink{
+    grid-column: 2/4;
+    color:#000;
+    text-decoration: none;
+    font-size: 35px;
+}
+#plink:hover{
+    color:#ffffff;
+    filter: drop-shadow(20px 10px 4px #ff5b60);
+}
+.img-container {
+    position: relative;
+ 
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+  .img-container:hover .img-overlay {
+    opacity: .8;
+}
