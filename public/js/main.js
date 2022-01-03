@@ -6,6 +6,9 @@ document.body.addEventListener("mousemove", function(e) {
 });
 
 /* navigation menu overlay */
+document.getElementById("open-button-container").addEventListener("click", openNav); 
+document.getElementById("close-button-container").addEventListener("click", closeNav); 
+
 function openNav() {
     document.getElementById("overlay-menu").style.width = "100%";
     document.getElementById("cursor").style.display = "block";
@@ -38,15 +41,15 @@ function srMediaQuery(f) {
 
     } else {
 
-        /* home section*/
+        /*home section*/
         sr.reveal('.main-text', { delay: 100 })
         sr.reveal('.main-photo', { origin: 'left', delay: 200 })
 
-        /*about information*/
-        sr.reveal('.text-wrap', { delay: 200 })
+        /*featured project */
+        sr.reveal('.feat-grid', { delay: 200 })
 
-        /*contact section*/
-        sr.reveal('.contact-grid', { delay: 200 })
+        /*about section*/
+        sr.reveal('.about-grid', { delay: 200 })
 
         /*projects page*/
         srproj.reveal('.latest-grid', { delay: 200, interval: 200 })
