@@ -67,7 +67,7 @@ body{
     overflow: hidden; /* Hide scrollbars */
 }
 nav{
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,12 +93,11 @@ nav{
 
 /*top home page section*/
 main {
+    min-height: 100vh;
     background-color: #e0c8c6;
     color:#fff;
-    min-height: 100vh;
 }
 .main-wrapper{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -128,7 +127,6 @@ h3{
 }
 .feat-grid{
     min-height: 100vh;
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, .1fr);
@@ -203,10 +201,8 @@ h3{
     url('../img/japan-mtn-fuji.jpg');
     background-size: cover;
     color:#fff;
-    min-height: 100vh;
 }
 .about-main{
-    min-height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -297,54 +293,66 @@ h3{
     text-align: center;
 }
 .contact-main{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
 }
-.contact-grid{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, .1fr);
-    gap: 30px;
-    color: rgb(0, 0, 0);
-
-    grid-template-areas:
-    "form"
-    "contact"
-}
-.contact-comment{
-
-}
-.contact-info{
-
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 .input-name{
     background: #FFFFFF;
     border: 3px solid #000000;
-    border-radius: 20px;
-    width: 140px;
+    border-radius: 0px;
+    width: 100%;
     height: 30px;
     padding-left:10px;
 }
 .input-email{
     background: #FFFFFF;
     border: 3px solid #000000;
-    border-radius: 20px;
-    width: 245px;
+    border-radius: 0px;
+    width: 100%;
     height: 30px;
     padding-left:10px;
 }
 .input-comment{
     background: #FFFFFF;
     border: 3px solid #000000;
-    border-radius: 20px;
-    height: 200px;
-    width: 400px;
-    padding: 10px;
+    border-radius: 0px;
+    width: 100%;
+    height: 325px;
+    padding-left:10px;
 }
-.button-area{
-    padding-top: 20px;   
+.name, .email{
+    padding-bottom: 10px;
+}
+.contact-info{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contact-info h3{
+    font-size: 30px;
+}
+.top-line{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.contact-info a{
+    color:rgb(70, 70, 70);
+    font-size: 20px;
+}
+.contact-info a:hover{
+    color:rgb(31, 31, 31);
+    text-decoration: none;
+    
+}
+.form div{
+    padding-bottom: 15px;
 }
 .submit-button{
     background-color: #4A93FF;
@@ -361,18 +369,18 @@ h3{
     border: 2px solid #000000;
     box-shadow: 12px 12px 2px 1px rgba(0, 140, 255, 0.2);
 }
-.top-line{
-    color:#000000;
-    padding-bottom: 20px;
+.button-area{
+    padding-top: 15px;
 }
+
 /*footer*/
 footer{
     background-color: rgb(255, 255, 255);
     padding-top: 30px;
     padding-bottom: 30px;
 }
-h2{
+footer p{
     text-align: center; 
-    color:rgb(46, 46, 46);
+    color: #1a1a1a;
     font-size: 20px;
 }
