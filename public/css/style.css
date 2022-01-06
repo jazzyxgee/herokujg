@@ -2,7 +2,7 @@
     box-sizing: 0;
     margin: 0;
     padding:0;
-    font-family: sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 html{
     /*overflow: hidden;*/
@@ -139,6 +139,13 @@ h3{
 .feat-grid img{
     width: 100%;
 }
+.feat-grid a{
+    color:#000;
+    text-decoration: none;
+}
+.feat-grid a:hover{
+    color:#ff5b60;
+}
 .top-left{  
     grid-area: top-left;
     display: grid;
@@ -173,7 +180,6 @@ h3{
 }
 .img-container {
     position: relative;
- 
 }
 .img-overlay {
     position: absolute;
@@ -194,7 +200,7 @@ h3{
     opacity: .8;
 }
 
-/**/
+/*about sections*/
 .about-section {
     background-image:
     linear-gradient(to bottom, rgb(107, 106, 30, .65), rgb(150, 178, 182, .65)),
@@ -269,13 +275,25 @@ h3{
 .projects-grid img{
     width: 100%;
 }
-.projects-grid a{
+.pglinks{
     color:#000;
     text-decoration: none;
 }
-.projects-grid a:hover{
-    color:#575757;
+.pglinks:hover{
+    color:#ff5b60;
     text-decoration: none;
+}
+.overlay-text{
+    text-align: center;
+}
+.overlay-text a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.overlay-text a:hover{
+    color:#ff5b60;
+    text-decoration: underline;
 }
 .project-text{
     font-size: 25px;
@@ -292,9 +310,11 @@ h3{
 
 /*contact section*/
 .contact-section{
+
     min-height: 100vh;
     background-color: #e0c8c6;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23ffebe9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");}
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23ffebe9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
 .contact-heading{
     font-size: 60px;
     color:#000;
@@ -332,9 +352,9 @@ h3{
     background: #FFFFFF;
     border: 3px solid #000000;
     border-radius: 0px;
-    width: 100%;
+    width: 98%;
     height: 325px;
-    padding-left:10px;
+    padding:10px 10px 0 10px;
 }
 .name, .email{
     padding-bottom: 10px;
@@ -373,7 +393,7 @@ h3{
     border-radius: 20px;
 }
 .submit-button:hover{
-    background-color: white;
+    background-color: #fff;
     color:#000000;
     border: 2px solid #000000;
     box-shadow: 12px 12px 2px 1px rgba(0, 140, 255, 0.2);
