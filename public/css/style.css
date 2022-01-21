@@ -451,7 +451,7 @@ footer p{
     .project-text{
         font-size: 25px;
         text-align: center;
-        width: 400px;
+        width: 100%;
         padding: 50px 0  50px 0;
     }
     
@@ -554,7 +554,10 @@ footer p{
     #plink{
         font-size: 22px;
     }
-
+    .projects-grid{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
