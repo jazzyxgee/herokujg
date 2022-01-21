@@ -257,7 +257,8 @@ h3{
 .projects-section {
     background: #ffffff;
     color:rgb(0, 0, 0);
-    min-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .projects{
     display: grid;
@@ -438,6 +439,15 @@ footer p{
         padding-top:30px;
         width: 550px;
     }
+    .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, .1fr);
+
+        gap: 30px;
+        color: #fff;
+
+    }
 }
 @media screen and (max-width :800px) {
     .feat-grid{
@@ -523,6 +533,7 @@ footer p{
         padding-left: 40px;
         padding-right: 50px;
     }
+
 }
 @media screen and (max-width :470px) {
     h1{
