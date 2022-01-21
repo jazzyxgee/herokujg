@@ -268,8 +268,10 @@ h3{
 .projects-grid{
     min-height: 100vh;
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, .1fr);
+
     gap: 30px;
     color: #fff;
 }
@@ -443,11 +445,16 @@ footer p{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, .1fr);
-
         gap: 30px;
         color: #fff;
-
     }
+    .project-text{
+        font-size: 25px;
+        text-align: center;
+        width: 400px;
+        padding: 50px 0  50px 0;
+    }
+    
 }
 @media screen and (max-width :800px) {
     .feat-grid{
