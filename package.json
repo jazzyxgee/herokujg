@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jazzyxgee/hjgs#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "serve-favicon": "^2.5.0"
   }
 }
