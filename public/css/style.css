@@ -180,6 +180,9 @@ h3{
 }
 .img-container {
     position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 .img-overlay {
     position: absolute;
@@ -450,11 +453,15 @@ footer p{
     }
     .project-text{
         font-size: 25px;
-        text-align: center;
         width: 100%;
-        padding: 50px 0  50px 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
-    
+    .project-text p{
+        width: 300px;
+        text-align: center;
+    }
 }
 @media screen and (max-width :800px) {
     .feat-grid{
