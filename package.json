@@ -1,5 +1,5 @@
 {
-  "name": "hjgs",
+  "name": "jasmineguevara",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jazzyxgee/hjgs.git"
+    "url": "git+https://github.com/jazzyxgee/jasmineguevara.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jazzyxgee/hjgs/issues"
+    "url": "https://github.com/jazzyxgee/jasmineguevara/issues"
   },
-  "homepage": "https://github.com/jazzyxgee/hjgs#readme",
+  "homepage": "https://github.com/jazzyxgee/jasmineguevara#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
