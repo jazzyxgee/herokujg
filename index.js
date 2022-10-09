@@ -6,8 +6,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
 
-/*var favicon = require('serve-favicon');
-app.use(favicon(__dirname + '/public/img/favicon.ico'));*/
+var favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 app.get('/', (req, res) => {
     res.render('index');
