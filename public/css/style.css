@@ -420,7 +420,7 @@ footer p{
 
 @media screen and (max-width :1200px) {
     h1{
-        color: #d15b5e;
+        
         font-size: 100px;
     }
     .main-photo{
@@ -428,8 +428,7 @@ footer p{
     }
     main {
         min-height: 60vh;
-        background-color: #e0c8c6;
-        color:#fff;
+
     }
     .feat-grid{
         padding-left: 15px;
@@ -550,7 +549,7 @@ footer p{
 }
 @media screen and (max-width :470px) {
     h1{
-        color: #d15b5e;
+        
         font-size:60px;
     }
     .sub-title{
